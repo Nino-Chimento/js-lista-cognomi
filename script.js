@@ -26,7 +26,7 @@ while (i < listaNomi.length ) {
  document.getElementById('posizione').innerHTML = posizione;
 var boolean = listaNomi.includes("marco");
 console.log(boolean);
-
+// creo 2 for annidati per far fare lo spelling dei nomi e trovare quelli che contengono la g
 for (var i = 0; i < listaNomi.length; i++) {
   spelling = listaNomi[i]
   for (var k = 0; k < spelling.length; k++) {
@@ -41,7 +41,7 @@ for (var i = 0; i < listaNomi.length; i++) {
   }
 }
 
-
+// stampo i nomi che sono minori di 8 lettere 
 for (var i = 0; i <= listaNomi.length - 1; i++){
   if (listaNomi[i].length<8) {
     document.getElementById('lista-nomi').innerHTML += "<li>" + listaNomi[i] + "</li>"
