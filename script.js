@@ -14,4 +14,6 @@ for (var i = 0; i <= listaNomi.length - 1; i++) {
 }
 
 // Scrivi anche la posizione della lista in cui il nuovo utente si trova.
-console.log(listaNomi.indexOf(nomeUtente ));
+ console.log(listaNomi.indexOf(nomeUtente ));
+  var posizione = listaNomi.indexOf(nomeUtente );
+ document.getElementById('posizione').innerHTML = posizione;
