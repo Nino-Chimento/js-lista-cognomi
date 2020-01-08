@@ -22,5 +22,5 @@ while (i <= listaNomi.length ) {
 
 // Scrivi anche la posizione della lista in cui il nuovo utente si trova.
  console.log(listaNomi.indexOf(nomeUtente ));
- var posizione = listaNomi.indexOf(nomeUtente );
+ var posizione = listaNomi.indexOf(nomeUtente ) + 1;
  document.getElementById('posizione').innerHTML = posizione;
