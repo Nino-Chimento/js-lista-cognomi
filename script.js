@@ -24,3 +24,9 @@ while (i < listaNomi.length ) {
  console.log(listaNomi.indexOf(nomeUtente ));
  var posizione = listaNomi.indexOf(nomeUtente ) + 1;
  document.getElementById('posizione').innerHTML = posizione;
+
+for (var i = 0; i <= listaNomi.length - 1; i++){
+  if (listaNomi[i].length<8) {
+    document.getElementById('lista-nomi').innerHTML += "<li>" + listaNomi[i] + "</li>"
+  }
+}
