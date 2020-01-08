@@ -15,7 +15,7 @@ for (var i = 0; i <= listaNomi.length - 1; i++) {
   document.getElementById('lista-nomi').innerHTML += "<li>" + listaNomi[i] + "</li>"
 }
 i = 0
-while (i <= listaNomi.length ) {
+while (i < listaNomi.length ) {
   document.getElementById('lista-nomi').innerHTML += "<li>" + listaNomi[i] + "</li>"
   i++
 }
