@@ -1,5 +1,8 @@
 // Chiedi all’utente il cognome,
 var nomeUtente = prompt("Inserisci il tuo nome");
+while (nomeUtente.length <= 0 ) {
+  nomeUtente = prompt("Inserisci il tuo nome");
+}
 // inseriscilo in un array con altri cognomi,
 listaNomi = ["marco","andrea","fabio","ludovico","giovanni","paolo","roberto"];
 listaNomi.push(nomeUtente);
