@@ -21,9 +21,26 @@ while (i < listaNomi.length ) {
 }
 
 // Scrivi anche la posizione della lista in cui il nuovo utente si trova.
- console.log(listaNomi.indexOf(nomeUtente ));
+
  var posizione = listaNomi.indexOf(nomeUtente ) + 1;
  document.getElementById('posizione').innerHTML = posizione;
+var boolean = listaNomi.includes("marco");
+console.log(boolean);
+
+for (var i = 0; i < listaNomi.length; i++) {
+  spelling = listaNomi[i]
+  for (var k = 0; k < spelling.length; k++) {
+    spelling[k]
+    console.log(spelling[k]);
+    if (spelling[k] == "g") {
+      console.log(spelling);
+      var nomeConG = spelling
+      document.getElementById('lista-nomi').innerHTML += "<li>" + nomeConG + "</li>"
+
+    }
+  }
+}
+
 
 for (var i = 0; i <= listaNomi.length - 1; i++){
   if (listaNomi[i].length<8) {
