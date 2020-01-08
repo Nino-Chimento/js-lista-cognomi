@@ -9,8 +9,12 @@ console.log(listaNomi);
 listaNomi.sort();
 console.log(listaNomi);
 for (var i = 0; i <= listaNomi.length - 1; i++) {
-
   document.getElementById('lista-nomi').innerHTML += "<li>" + listaNomi[i] + "</li>"
+}
+i = 0
+while (i <= listaNomi.length ) {
+  document.getElementById('lista-nomi').innerHTML += "<li>" + listaNomi[i] + "</li>"
+  i++
 }
 
 // Scrivi anche la posizione della lista in cui il nuovo utente si trova.
